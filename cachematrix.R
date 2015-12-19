@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = as.matrix()) {
 ##calculate or cache the Inverse
 cacheSolve <- function(x) {
         inv <- x$getinv()
-        ##check if Inverse is already cache'd
+        ##check if Inverse is already cache'd, is yes (inv will not be NULL as calculated in makeCacheMatrix()) and return cache'd Inverse 
         if(!is.null(inv)) {
                 message("getting cached data")
                 return(inv)
